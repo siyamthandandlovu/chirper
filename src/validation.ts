@@ -1,4 +1,4 @@
-import { type Interaction, type TweetInteractions } from "./temperature.ts"
+import { type Interaction, type TweetInteractions } from "./temperature"
 
 
 //========================= VALIDATE API INPUT INTERFACE ===============================

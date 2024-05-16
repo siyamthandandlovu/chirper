@@ -189,7 +189,3 @@ export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
   return jsonResponse;
 }
 
-
-
-//=========================== AUXILLARY FUNCTIONS ==================================
-

@@ -5,7 +5,6 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
 
-
 import {
   type TemperatureData,
   temperatureAlgorithm,
@@ -30,87 +29,53 @@ app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
 
- 
-
 function handlePost(body: any) {
   let jsonResponse = temperatureAlgorithm(body);
   return jsonResponse;
 }
 
-
-
-app.get("/api",  (req,res) => {
+app.get("*", (req, res) => {
   try {
     const htmlContent = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Chirper Temperature</title>
-    </head>
-    <body>
-      <h1>Hello!</h1>
-      <p>Seems like you're interested in using the Chirper Temperature Algorithm.</p>
-      <p>You can check out the documentation here : <a href="https://siyamthandandlovu.github.io/chirper">Chirper Temperature </a></p>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chirper Temperature</title>
+  </head>
+
+  <body>
+    <div class="mt-5 top-50">
+      <img src="" alt="" class="w-25" />
+
+      <h1 class="text-center text-6xl my-3 font-bold">Hello!</h1>
+      <p class="text-center text-3xl my-3">
+        Looks like you're interested in using the <br />
+        <b> Chirper Temperature Algorithm.</b>
+      </p>
+
+      <p class="text-center text-xl my-3">
+        You can check out the documentation here : <br />
+        <a
+          class="link-dark px-3 bg-[#5daade] border-black border rounded-full duration-300 hover:border-black hover:bg-white"
+          href="https://siyamthandandlovu.github.io/chirper"
+        >
+          Chirper Temperature Documentation
+        </a>
+      </p>
+    </div>
+  </body>
+</html>
+
   `;
 
     res.status(200).send(htmlContent);
   } catch (error) {
-    res.status(500).send("Server Error");
+    res.status(500).json({ message: "Internal Error" });
   }
 });
-
-
-
-
-app.get("*",  (req,res) => {
-  try {
-    const htmlContent = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Chirper Temperature</title>
-    </head>
-    <body>
-      <h1>Hello!</h1>
-      <p>Seems like you're interested in using the Chirper Temperature Algorithm.</p>
-      <p>You can check out the documentation here : <a href="https://siyamthandandlovu.github.io/chirper">Chirper Temperature </a></p>
-    </body>
-    </html>
-  `;
-
-    res.status(200).send(htmlContent);
-  } catch (error) {
-     const htmlContent = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Chirper Temperature</title>
-    </head>
-    <body>
-      <h1>Hello!</h1>
-      <p>Seems like you're interested in using the Chirper Temperature Algorithm.</p>
-      <p>You can check out the documentation here : <a href="https://siyamthandandlovu.github.io/chirper">Chirper Temperature </a></p>
-    </body>
-    </html>
-  `;
-
-     res.status(200).send(htmlContent);
-  }
-});
-
-
-
-
-
-
 
 app.post("/api", (req, res) => {
   try {
@@ -121,51 +86,29 @@ app.post("/api", (req, res) => {
       throw new Error("Invalid JSON");
     }
 
+    if (!validateInterfaceTweetInteractions(data)) {
+      throw new Error("Invalid interface for tweet interactions object");
+    }
+
+    if (!validateTimestampsAllUnix(data)) {
+      throw new Error("Invalid timestamps");
+    }
+
+    let responseBody = handlePost(data);
+    console.log("responseBody: ", responseBody);
     // Process the valid JSON data (for example, send a success response)
-    res.status(200).json({ message: "Valid JSON received", data });
+    res.status(200).json({ message: "Temperature Values Ready", responseBody });
   } catch (error) {
     // Send an invalid JSON error response
-    res.status(400).json({ error: "Invalid JSON" });
+    res.status(400).json({ error: error.message });
   }
+
+
+  
 });
-
-/* hjgvh
-
-
-app.post("/api", async (c) => {
-  try {
-    const body = await c.req.json();
-
-    if (!validateInterfaceTweetInteractions(body)) {
-      return c.json(
-        { error: "Invalid interface for tweet interactions object" },
-        400
-      );
-    }
-
-    if (!validateTimestampsAllUnix(body)) {
-      return c.json({ error: "Invalid timestamps" }, 400);
-    }
-
-    let responseBody = handlePost(body);
-    console.log("responseBody: ", responseBody);
-    return c.json({ message: "Received successfully", data: responseBody });
-  } catch (error) {
-    return c.json({ error: "Invalid JSON input" }, 400);
-  }
-});
-
- */
-
-
-
-
-
 
 const server = http.createServer(app);
 
 server.listen(8080, () => {
-    console.log(`Server running on port ${server.address()}`);
-
+  console.log(`Server running on port ${server.address()}`);
 });
-
