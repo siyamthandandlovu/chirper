@@ -121,3 +121,4 @@ function temperatureAlgorithm(data) {
     return jsonResponse;
 }
 exports.temperatureAlgorithm = temperatureAlgorithm;
+//# sourceMappingURL=temperature.js.map

@@ -62,3 +62,4 @@ function isValidUnixTimestampString(timestamp) {
     return (!isNaN(timestampNumber) && timestampNumber >= 1142793600000 // March 20, 2006 in milliseconds
     );
 }
+//# sourceMappingURL=validation.js.map

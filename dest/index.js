@@ -63,3 +63,4 @@ var server = http.createServer(app);
 server.listen(8080, function () {
     console.log("Server running on port ".concat(server.address()));
 });
+//# sourceMappingURL=index.js.map
