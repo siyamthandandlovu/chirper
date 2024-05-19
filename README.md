@@ -6,7 +6,7 @@
  
  
 
-1. [Overview](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#1-overview)
+1. [Overview](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#1-overview)
 2. [Tutorial](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#2-tutorial)
 3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#3-code-snippets)
 4. [Errors](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#4-errors)
