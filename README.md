@@ -5,10 +5,10 @@
 
 # Chirper Temperature API
 
-1. [Overview](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#1-overview)
-2. [Tutorial](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#2-tutorial)
-3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#3-code-snippets)
-4. [Errors](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#4-errors)
+1. [Overview](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#1-overview)
+2. [Tutorial](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#2-tutoriall)
+3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#3-code-snippets)
+4. [Errors](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#4-errors)
 
 
 ## 1. Overview
@@ -21,7 +21,7 @@ While the full implemented clone remains private, I am able to publish
 
 ### Tech Stack
 <p align="">
-    <img src="https://skillicons.dev/icons?i=typescript,nodejs,express,npm" />
+    <img src="https://skillicons.dev/icons?i=typescript,kubernetes,docker,c,vim" />
 </p>
 
 
