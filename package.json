@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon src/index.ts",
+    "dev":"nodemon src/index.ts",
     "start": "ts-node src/index.ts",
-    "test": "echo \"No test specified\" && exit 1",
-    "vercel-build": "ts-node src/index.ts"
+    "test": "echo \"No test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["twitter","tweets"],
   "author": "Siyamthanda Ndlovu",
   "license": "MIT",
   "devDependencies": {
