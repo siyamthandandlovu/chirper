@@ -8,8 +8,11 @@
 
 1. [Overview](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#1-overview)
 2. [Tutorial](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#2-tutorial)
-3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#3-code-snippets)
-4. [Errors](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#4-errors)
+3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#3-code-snippets)
+4. [Errors](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#4-errors)
+5. [Local Deployment](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#5-local-deployment)
+6. [License](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#6-license)
+7. [Notes From Author](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#7-notes-from-author)
 
 
 # 1. OVERVIEW
