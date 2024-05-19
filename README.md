@@ -21,7 +21,7 @@ While the full implemented clone remains private, I am able to publish
 
 ### Tech Stack
 <p align="">
-    <img src="https://skillicons.dev/icons?i=typescript,kubernetes,docker,c,vim" />
+    <img src="https://skillicons.dev/icons?i=typescript,nodejs,express" />
 </p>
 
 
