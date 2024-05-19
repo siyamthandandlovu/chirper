@@ -317,7 +317,6 @@ Follow these steps to deploy the API on your local machine and visit it at http:
     git clone https://github.com/siyamthandandlovu/chirper.git
     ```
  
-
 2. **Navigate to the API Directory:**
 
     ```bash
@@ -357,13 +356,14 @@ Follow these steps to deploy the API on your local machine and visit it at http:
 You can use tools like [Postman](https://www.postman.com/) or [Thunderclient](https://www.thunderclient.com/) to interact with the API endpoints.
 
 
-# 6. BUN ALTERNATIVE
-I initially implemented the API as a using [bun](https://bun.sh) but haven't deployed it just yet. 
 
-You are welcome to check out the code here 👇🏽
-https://github.com/siyamthandandlovu/chirper-bun.git
+# 6. LICENSE
+Chirper is [MIT Licensed](https://github.com/siyamthandandlovu/chirper/blob/documentation/LICENSE).
 
 
-# 7. LICENSE
+# 7. NOTES FROM AUTHOR
+I'm really open to suggestions on how to improve the API and function. I also developed a nextjs frontend component during the project so I'm planning on releasing that soon and having it intergrated with the API. 
 
-Chirper is MIT licensed.
+In the meantime, if you have any suggestions/improvements, feel free to open an issure
+
+Otherwise feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/siyamthandandlovu/) or by [email](SIYAMTHANDA.NDLOVU.GASA@GMAIL.COM).
