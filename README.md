@@ -86,42 +86,43 @@ interface ApiResponse {
   "tweetDate": "1684156800000",
   "replies": [
     {
-      "username": "alice_wonderland",
-      "date": "1684232400000"
+      username: "alice_wonderland",
+      date: "1684232400000"
     },
     {
-      "username": "bob_builder",
-      "date": "1684308000000"
+      username: "bob_builder",
+      date: "1684308000000"
     },
     {
-      "username": "charlie_brown",
-      "date": "1684383600000"
+      username: "charlie_brown",
+      date: "1684383600000"
     }
   ],
   "likes": [
     {
-      "username": "daisy_duke",
-      "date": "1684459200000"
+      username: "daisy_duke",
+      date: "1684459200000"
     },
     {
-      "username": "edward_snowden",
-      "date": "1684534800000"
+      username: "edward_snowden",
+      date: "1684534800000"
     }
   ],
   "retweets": [
     {
-      "username": "fiona_apple",
-      "date": "1684610400000"
+      username: "fiona_apple",
+      date: "1684610400000"
     },
     {
-      "username": "george_clooney",
-      "date": "1684686000000"
+      username: "george_clooney",
+      date: "1684686000000"
     },
     {
-      "username": "hannah_montana",
-      "date": "1684761600000"
+      username: "hannah_montana",
+      date: "1684761600000"
     }
   ]
+
 }
 
 ```
