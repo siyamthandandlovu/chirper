@@ -7,22 +7,23 @@
  
 
 1. [Overview](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#1-overview)
-2. [Tutorial](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#2-tutorial)
+2. [Tutorial](https://github.com/siyamthandandlovu/chirper/tree/documentation?tab=readme-ov-file#2-tutorial)
 3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#3-code-snippets)
 4. [Errors](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#4-errors)
 
 
 # 1. OVERVIEW
 
-### WHAT IS IT?
-The Chirper Algorithm is one that provides users with an intuitive way of understanding the popularity of a tweet. The algorithm **calculates the overall "temperature"** of a tweet **based on the interactions the tweet has had**. It determines a tweet's popularity by increasing the tweet's temperature based on the type of interaction and decreasing the temperature during the time when the tweet wasn't be interacted with.
+## WHAT IS IT?
 
-The Chirper Algorithm was originally part of a lightweight Twitter clone project that I, [Siyamthanda Ndlovu](https://siyamthandandlovu.netlify.app/), worked on as a part of a  [Software Engineering module](https://www.cs.up.ac.za/module/cos301/) I am enrolled in as a Computer Science student.
+### The Chirper Algorithm is one that provides users with an intuitive way of understanding the popularity of a tweet. The algorithm **calculates the overall "temperature"** of a tweet **based on the interactions the tweet has had**. It determines a tweet's popularity by increasing the tweet's temperature based on the type of interaction and decreasing the temperature during the time when the tweet wasn't be interacted with.
 
-The twitter clone was completed along with my team members and while the project itself will remain private, I am able to publish the algorithm I developed, along with the source code.
+### The Chirper Algorithm was originally part of a lightweight Twitter clone project that I, [Siyamthanda Ndlovu](https://siyamthandandlovu.netlify.app/), worked on as a part of a  [Software Engineering module](https://www.cs.up.ac.za/module/cos301/) I am enrolled in as a Computer Science student.
+
+### The twitter clone was completed along with my team members and while the project itself will remain private, I am able to publish the algorithm I developed, along with the source code.
 
 
-### TECH STACK
+## TECH STACK
 <p align="">
     <img src="https://skillicons.dev/icons?i=typescript,nodejs,express" />
 </p>
@@ -362,7 +363,7 @@ Chirper is [MIT Licensed](https://github.com/siyamthandandlovu/chirper/blob/docu
 
 
 # 7. NOTES FROM AUTHOR
-I'm really open to suggestions on how to improve the API and function. I also developed a nextjs frontend component during the project so I'm planning on releasing that soon and having it intergrated with the API. 
+I'm really open to suggestions on how to improve the API and its functions. I also developed a Next.js frontend component during the project, so I'm planning on releasing that soon and integrating it with the API.
 
 In the meantime, if you have any suggestions/improvements, feel free to open an issure
 
