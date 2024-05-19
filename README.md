@@ -20,10 +20,8 @@ It was written by me 😄, [Siyamthanda](https://siyamthandandlovu.netlify.app/)
 While the full implemented clone remains private, I am able to publish
 
 ### Tech Stack
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=typescript,kubernetes,docker,c,vim" />
-  </a>
+<p align="">
+    <img src="https://skillicons.dev/icons?i=typescript,nodejs,express" />
 </p>
 
 
