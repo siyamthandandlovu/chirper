@@ -4,6 +4,7 @@
   "description": "1. Overview\r 2. Tutorial\r 3. Examples",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
