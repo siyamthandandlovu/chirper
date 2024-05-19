@@ -1,9 +1,37 @@
+<p align="center">
+  <a href="https://nestjs.com/" target="blank"><img src="https://github.com/siyamthandandlovu/documentation/assets/99127918/d164bb02-8c5d-43b6-85d2-cb1c86cab51c" width="120" alt="Nest Logo" /></a>
+</p>
+
 
 # Chirper Temperature API
 
-1. Overview
-2. Tutorial
-3. Examples
+1. [Overview](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#1-overview)
+2. [Tutorial](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#2-tutorial)
+3. [Code Snippets](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#3-code-snippets)
+4. [Errors](https://github.com/siyamthandandlovu/chirper/edit/master/README.md#4-errors)
+
+
+## 1. Overview
+
+The Chirper Temperature Algorithm is one that calculates the overall "temperature" of a tweet based on the interactions the tweet has had.
+
+It was written by me 😄, [Siyamthanda](https://siyamthandandlovu.netlify.app/) as a part of a Twitter Clone project that I took as a part of the [Software Engineering Module](https://www.cs.up.ac.za/module/cos301/).
+
+While the full implemented clone remains private, I am able to publish
+
+### Tech Stack
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=typescript,kubernetes,docker,c,vim" />
+  </a>
+</p>
+
+
+## 2. Tutorial
+
+1. The`POST `requests
+2. The `body `of the post has to have the following format : 
+
 
 
 ## Input
@@ -14,7 +42,7 @@ likes: { username: string, date: date}[],
 retweets: { username: string, date: date}[],
 ``` 
 
-## Examples
+## 3. Code Snippets
 ```typescript
  { "tweetDate":"2024-05-15T08:00:00Z",
     "replies": [
@@ -36,7 +64,7 @@ retweets: { username: string, date: date}[],
 ```
 
 
-## Errors
+## 4. Errors
 ### Invalid Timestamps 
 Returns this if :
 - the timestamps are not Unix timestamps
