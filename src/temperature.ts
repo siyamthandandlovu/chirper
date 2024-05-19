@@ -1,15 +1,3 @@
-/* export type TemperatureInputData = {
-  tweetID: string,
-  timeCreated: string,
-  timeUpdated: string
-  username: string,
-  replies: { username: string, timeCreated: string, timeUpdated: string }[],
-  likes: { username: string, timeCreated: string }[],
-  retweets: { username: string, timeCreated: string, timeUpdated: string }[],
-  countReplies: number,
-  countLikes: number,
-  countRetweets: number
-} */
 
 
 export interface TweetInteractions {

@@ -1,16 +1,4 @@
 "use strict";
-/* export type TemperatureInputData = {
-  tweetID: string,
-  timeCreated: string,
-  timeUpdated: string
-  username: string,
-  replies: { username: string, timeCreated: string, timeUpdated: string }[],
-  likes: { username: string, timeCreated: string }[],
-  retweets: { username: string, timeCreated: string, timeUpdated: string }[],
-  countReplies: number,
-  countLikes: number,
-  countRetweets: number
-} */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.temperatureAlgorithm = void 0;
 function temperatureAlgorithm(data) {

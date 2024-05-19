@@ -1,16 +1,18 @@
 {
   "name": "chirper",
   "version": "1.0.0",
-  "description": "1. Overview\r 2. Tutorial\r 3. Examples",
+  "description": "Chirper Temperature",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"nodemon src/index.ts",
+    "start": "ts-node src/index.ts",
+    "test": "echo \"No test specified\" && exit 1",
+    "vercel-build":"echo hello"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Siyamthanda Ndlovu",
+  "license": "MIT",
   "devDependencies": {
     "@types/compression": "^1.7.5",
     "@types/cookie-parser": "^1.4.7",
