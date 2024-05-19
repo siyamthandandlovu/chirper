@@ -3,7 +3,7 @@
 </p>
 
 # Chirper Temperature API
- 
+This typescript algorithm calculates the overall "temperature" of a tweet **based on the interactions the tweet has had**.
  
 
 1. [Overview](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#1-overview)
