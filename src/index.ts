@@ -18,12 +18,12 @@ import {
   temperatureAlgorithm,
   type TweetInteractions,
   type Interaction,
-} from "../src/temperature";
+} from "./temperature";
 
 import {
   validateInterfaceTweetInteractions,
   validateTimestampsAllUnix,
-} from "../src/validation";
+} from "./validation";
 
 const app = express();
 
@@ -120,3 +120,6 @@ const server = http.createServer(app);
 server.listen(8080, () => {
   console.log(`Server running on port ${server.address()}`);
 });
+
+
+module.exports = app;

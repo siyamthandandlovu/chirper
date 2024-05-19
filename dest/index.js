@@ -14,8 +14,8 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
  */
-var temperature_1 = require("../src/temperature");
-var validation_1 = require("../src/validation");
+var temperature_1 = require("./temperature");
+var validation_1 = require("./validation");
 var app = express();
 app.use(cors({
     credentials: true,
@@ -63,4 +63,5 @@ var server = http.createServer(app);
 server.listen(8080, function () {
     console.log("Server running on port ".concat(server.address()));
 });
+module.exports = app;
 //# sourceMappingURL=index.js.map
