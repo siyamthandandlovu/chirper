@@ -1,5 +1,3 @@
-
-
 export interface TweetInteractions {
   tweetDate: string;
   replies: { username: string; date: string }[];
@@ -11,12 +9,6 @@ export interface Interaction {
   username: string;
   string: string;
 }
-
-
-
-
-
-
 
 interface engagementTypeInterface {
   type: string;
@@ -41,7 +33,7 @@ export type TemperatureData = {
   temperatureValues: temperatureValuesInterface[];
   engagementTypes: engagementTypeInterface[];
   interactionIntervals: number[];
-}
+};
 
 export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
   const retweetWeight: number = 9 / 100;
@@ -53,7 +45,7 @@ export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
   let objLikes: engagementTypeInterface[] = [];
   let objReplies: engagementTypeInterface[] = [];
 
-  //Operations to get the retweets, likes and replies 
+  //Operations to get the retweets, likes and replies
 
   const tweetCreatedTimestamp: string = data["tweetDate"];
   const countReplies: number = data.replies.length;
@@ -83,16 +75,14 @@ export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
     username: retweet.username,
   }));
 
-
   //combine all engagements into one object
   let jsonAllEngagements: engagementTypeInterface[] = [];
   jsonAllEngagements = jsonAllEngagements.concat(objRetweets);
   jsonAllEngagements = jsonAllEngagements.concat(objLikes);
   jsonAllEngagements = jsonAllEngagements.concat(objReplies);
 
-
   //sort the engagements
-  console.log("Sorted engagements : ",jsonAllEngagements)
+  console.log("Sorted engagements : ", jsonAllEngagements);
   jsonAllEngagements.sort((a, b) => (a.timestamp > b.timestamp ? 1 : -1));
   jsonAllEngagements.unshift({
     type: "inital",
@@ -100,18 +90,12 @@ export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
     username: "Initial Temperature",
   });
 
-
   //get the time intervals (in minutes) during which the tweet wasnt being interacted with
   const jsonInteractionIntervals: number[] = [];
 
   for (let i = 0; i < jsonAllEngagements.length - 1; i++) {
-    const currentTimestamp = Number( String(jsonAllEngagements[i].timestamp));
-    const nextTimestamp = Number( String(jsonAllEngagements[i + 1].timestamp));
-    
-/*     const timeDifference = Math.floor(
-      Math.abs(nextTimestamp.getTime() - currentTimestamp.getTime()) /
-        (1000 * 60)
-    ); */ 
+    const currentTimestamp = Number(String(jsonAllEngagements[i].timestamp));
+    const nextTimestamp = Number(String(jsonAllEngagements[i + 1].timestamp));
 
     const timeDifference = Math.floor(
       Math.abs(nextTimestamp - currentTimestamp) / (1000 * 60)
@@ -153,8 +137,8 @@ export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
     }
 
     const roundedTemp = parseFloat(temp.toFixed(2));
-/*     jsonAllTemperatureValues.push({ value: roundedTemp });
- */    jsonAllTemperatureValues.push({ value: currTemp });
+    /*     jsonAllTemperatureValues.push({ value: roundedTemp });
+     */ jsonAllTemperatureValues.push({ value: currTemp });
   });
 
   //combining data to be sent
@@ -176,4 +160,3 @@ export function temperatureAlgorithm(data: TweetInteractions): TemperatureData {
   console.log(jsonResponse);
   return jsonResponse;
 }
-

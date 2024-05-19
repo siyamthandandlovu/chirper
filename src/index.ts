@@ -1,18 +1,10 @@
-/* import express from "express";
- */
 import * as express from "express";
-
 import * as http from "http";
 import * as bodyParser from "body-parser";
 import * as cookieParser from "cookie-parser";
 import * as compression from "compression";
 import * as cors from "cors";
-/* import http from "http";
-import bodyParser from "body-parser";
-import cookieParser from "cookie-parser";
-import compression from "compression";
-import cors from "cors";
- */
+
 import {
   type TemperatureData,
   temperatureAlgorithm,
@@ -76,7 +68,6 @@ app.get("*", (req, res) => {
     </div>
   </body>
 </html>
-
   `;
 
     res.status(200).send(htmlContent);
@@ -110,9 +101,33 @@ app.post("/api", (req, res) => {
     // Send an invalid JSON error response
     res.status(400).json({ error: error.message });
   }
+});
 
+app.post("/", (req, res) => {
+  try {
+    const data = req.body;
 
-  
+    // Check if the request body is a valid JSON object
+    if (typeof data !== "object" || data === null) {
+      throw new Error("Invalid JSON");
+    }
+
+    if (!validateInterfaceTweetInteractions(data)) {
+      throw new Error("Invalid interface for tweet interactions object");
+    }
+
+    if (!validateTimestampsAllUnix(data)) {
+      throw new Error("Invalid timestamps");
+    }
+
+    let responseBody = handlePost(data);
+    console.log("responseBody: ", responseBody);
+    // Process the valid JSON data (for example, send a success response)
+    res.status(200).json({ message: "Temperature Values Ready", responseBody });
+  } catch (error) {
+    // Send an invalid JSON error response
+    res.status(400).json({ error: error.message });
+  }
 });
 
 const server = http.createServer(app);
@@ -120,6 +135,5 @@ const server = http.createServer(app);
 server.listen(8080, () => {
   console.log(`Server running on port ${server.address()}`);
 });
-
 
 module.exports = app;
