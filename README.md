@@ -1,9 +1,10 @@
 <p align="center">
-  <a href="https://nestjs.com/" target="blank"><img src="https://github.com/siyamthandandlovu/documentation/assets/99127918/d164bb02-8c5d-43b6-85d2-cb1c86cab51c" width="120" alt="Nest Logo" /></a>
+  <a href="" target="blank"><img src="https://github.com/siyamthandandlovu/documentation/assets/99127918/d164bb02-8c5d-43b6-85d2-cb1c86cab51c" width="120" alt="Nest Logo" /></a>
 </p>
 
-
 # Chirper Temperature API
+ 
+ 
 
 1. [Overview](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#1-overview)
 2. [Tutorial](https://github.com/siyamthandandlovu/chirper/blob/documentation/README.md#2-tutorial)
@@ -13,16 +14,20 @@
 
 ## 1. Overview
 
-The Chirper Temperature Algorithm is one that calculates the overall "temperature" of a tweet based on the interactions the tweet has had.
+### WHAT IS IT?
+The Chirper Algorithm is one that provides users with an intuitive way of understanding the popularity of a tweet. The algorithm **calculates the overall "temperature"** of a tweet **based on the interactions the tweet has had**. It determines a tweet's popularity by increasing the tweet's temperature based on the type of interaction and decreasing the temperature during the time when the tweet wasn't be interacted with.
 
-It was written by me 😄, [Siyamthanda](https://siyamthandandlovu.netlify.app/) as a part of a Twitter Clone project that I took as a part of the [Software Engineering Module](https://www.cs.up.ac.za/module/cos301/).
+The Chirper Algorithm was originally part of a lightweight Twitter clone project that I, [Siyamthanda Ndlovu](https://siyamthandandlovu.netlify.app/), worked on as a part of a  [Software Engineering module](https://www.cs.up.ac.za/module/cos301/) I am enrolled in as a Computer Science student.
 
-While the full implemented clone remains private, I am able to publish
+The twitter clone was completed along with my team members and while the project itself will remain private, I am able to publish the algorithm I developed, along with the source code.
 
-### Tech Stack
+
+### TECH STACK
 <p align="">
     <img src="https://skillicons.dev/icons?i=typescript,nodejs,express" />
 </p>
+
+
 
 
 ## 2. Tutorial
