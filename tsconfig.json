@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "moduleResolution": "Classic",
+    "moduleResolution": "node",
     "baseUrl": "src",
     "outDir": "dest",
     "sourceMap": true,
