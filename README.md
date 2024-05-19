@@ -297,7 +297,7 @@ The API returns this if :
 The API returns this if :
 - the tweet date, replies like or retweets are missing
 
-# 5 LOCAL DEPLOYMENT
+# 5. LOCAL DEPLOYMENT
 
 **Prerequisites**
 Make sure you have the following installed on your machine:
@@ -357,9 +357,13 @@ Follow these steps to deploy the API on your local machine and visit it at http:
 You can use tools like [Postman](https://www.postman.com/) or [Thunderclient](https://www.thunderclient.com/) to interact with the API endpoints.
 
 
-# 6 BUN ALTERNATIVE
-I initially implemented the API as a using [bun](https://bun.sh) but haven't deployed it just yet
+# 6. BUN ALTERNATIVE
+I initially implemented the API as a using [bun](https://bun.sh) but haven't deployed it just yet. 
+
 You are welcome to check out the code here 👇🏽
 https://github.com/siyamthandandlovu/chirper-bun.git
 
-# 7 LICENSE
+
+# 7. LICENSE
+
+Chirper is MIT licensed.
